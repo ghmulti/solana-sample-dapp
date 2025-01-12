@@ -1,6 +1,30 @@
 # solana-sample-dapp
 
 ## Getting Started
+generate new wallet 
+```
+solana-keygen new --outfile ~/.config/solana/id.json
+```
+
+change solana cli to use generated wallet 
+```
+solana config set --url localhost
+solana config set --keypair ~/.config/solana/id.json
+
+> solana config get - to check config
+```
+
+starting validator locally
+```
+pnpm anchor-localnet
+```
+
+starting frontend
+```
+pnpm dev
+```
+
+checking out http://localhost:3000/
 
 ### Prerequisites
 
