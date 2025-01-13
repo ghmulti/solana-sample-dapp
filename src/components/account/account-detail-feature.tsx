@@ -31,7 +31,7 @@ export default function AccountDetailFeature() {
         title={<AccountBalance address={address} />}
         subtitle={
           <div className="my-4">
-            <ExplorerLink path={`account/${address}`} label={ellipsify(address.toString())} />
+            <ExplorerLink path={`account/${address}`} label={address.toString()} />
           </div>
         }
       >

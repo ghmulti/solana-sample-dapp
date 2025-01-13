@@ -20,7 +20,7 @@ export default function SolanasampledappFeature() {
         }
       >
         <p className="mb-6">
-          <ExplorerLink path={`account/${programId}`} label={ellipsify(programId.toString())} />
+          <ExplorerLink path={`account/${programId}`} label={"Program id: " + programId.toString()} />
         </p>
         <SolanasampledappCreate />
       </AppHero>

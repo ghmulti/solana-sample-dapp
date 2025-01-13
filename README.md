@@ -26,6 +26,26 @@ pnpm dev
 
 checking out http://localhost:3000/
 
+DaisyUI for UI themes - https://daisyui.com/docs/themes/
+
+#### Creating new account tokens (within current wallet)
+
+Use `spl-accounts` to check existing accounts
+
+```
+spl-token create-token
+```
+
+Create account for newly created token
+```
+spl-token create-account <MINT_ADDRESS>
+```
+
+Mint tokens to the new account
+```
+spl-token mint <MINT_ADDRESS> <AMOUNT> <ACCOUNT_ADDRESS>
+```
+
 ### Prerequisites
 
 - Node v18.18.0 or higher
